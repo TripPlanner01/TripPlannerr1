@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('background1.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .container {
+        max-width: 400px;
+        margin: 50px auto;
+        background-color: rgba(255, 255, 255, 0.8); 
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333; /* Dark text color */
+    }
+    input[type="text"],
+    input[type="text"],
+    input[type="date"]{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Booking</h2>
+    <form action="#" method="post">
+        Starting Destination<input type="text" name="SD" placeholder="From where you start you trip" required>
+        Ending Destination<input type="text" name="ED" placeholder="Place you want to go" required>
+        Date<input type="date" name="tdate" placeholder="" required>
+        <input type="submit" value="Book" onclick="alert('Your Trip is booked')">
+    </form>
+</div>
+
+</body>
+</html>
